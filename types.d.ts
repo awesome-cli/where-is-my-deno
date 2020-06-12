@@ -1,4 +1,4 @@
-export default interface IpWhoIsResult {
+export interface IpWhoIsResult {
   readonly ip: string;
   readonly success: boolean;
   readonly type: string;

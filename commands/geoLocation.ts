@@ -1,9 +1,6 @@
-import { blue, cyan, red } from "https://deno.land/std/fmt/colors.ts";
-import Kia from "https://deno.land/x/kia@0.3.0/mod.ts";
+import { blue, cyan, red, Kia } from "../deps.ts";
 
-import { spinner } from "../functions/spinner.ts";
-
-import IpWhoIsResult from "../interfaces/IpWhoIsResult.ts";
+import { IpWhoIsResult } from "../types.d.ts";
 
 const API_ENDPOINT = "http://free.ipwhois.io/json/";
 
@@ -33,4 +30,4 @@ const geoLocation = async () => {
   }
 };
 
-export default geoLocation
+export default geoLocation;

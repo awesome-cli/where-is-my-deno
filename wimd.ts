@@ -1,7 +1,7 @@
-import Denomander from "https://deno.land/x/denomander/mod.ts";
+import { Denomander } from "./deps.ts";
 
-import geoLocation from './commands/geoLocation.ts';
-import diskLocation from './commands/diskLocation.ts';
+import geoLocation from "./commands/geoLocation.ts";
+import diskLocation from "./commands/diskLocation.ts";
 
 const program = new Denomander({
   app_name: "Where is my Deno",
@@ -18,7 +18,7 @@ program
 
     if (geo) await geoLocation();
 
-    if (geo && disk) console.log('');
+    if (geo && disk) console.log("");
 
     if (disk) diskLocation();
   });
