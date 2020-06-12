@@ -10,19 +10,17 @@ const program = new Denomander({
 });
 
 program
-  .command("wimd", "aa")
+  .command("wimd", "")
   .option("-g --geo", "Computer geolocation")
   .option("-d --disk", "Directory on disk")
   .action(async () => {
-    // console.log(Deno.env.toObject())
-    // if (Deno.args.length) program.help();
+    const { geo, disk } = program;
 
-    // if (geo)
-    await geoLocation();
+    if (geo) await geoLocation();
 
-    // if (geo && disk) console.log('');
-    //
-    // if (disk) diskLocation();
+    if (geo && disk) console.log('');
+
+    if (disk) diskLocation();
   });
 
 program.parse(Deno.args);
