@@ -10,7 +10,8 @@ const program = new Denomander({
 });
 
 program
-  .command("wimd", "")
+  .command("where-is-my-deno", "")
+  .alias("my-deno", "wimd")
   .option("-g --geo", "Computer geolocation")
   .option("-d --disk", "Directory on disk")
   .action(async () => {
