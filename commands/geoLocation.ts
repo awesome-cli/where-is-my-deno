@@ -4,9 +4,9 @@ import IpWhoIsResult from "../interfaces/IpWhoIsResult.ts";
 
 const API_ENDPOINT = "http://free.ipwhois.io/json/";
 
-const spinner = new Kia("Checking geolocation");
-
 const geoLocation = async () => {
+  const spinner = new Kia("Checking geolocation");
+
   spinner.start();
 
   try {

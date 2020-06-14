@@ -1,7 +1,7 @@
-const diskLocation = () => {
-  // console.log(Deno.env.toObject())
+import { blue } from "../deps.ts";
 
-  console.log(Deno.env);
+const diskLocation = () => {
+  console.log(`${blue("Directory on disk:")}\n${Deno.env.toObject()._}`);
 };
 
 export default diskLocation;
