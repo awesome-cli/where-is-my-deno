@@ -23,7 +23,7 @@ const geoLocation = async () => {
         `${cyan("city")}: ${data.city}\n` +
         `${cyan("region")}: ${data.region}\n` +
         `${cyan("country")}: ${data.country}\n` +
-        `${cyan("continent")}: ${data.continent}`
+        `${cyan("continent")}: ${data.continent}`,
     );
   } catch {
     spinner.fail(red("Unable to get computer geolocation"));
