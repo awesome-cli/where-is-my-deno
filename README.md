@@ -11,7 +11,7 @@ Get Deno location (geolocation and directory on your disk)
 ## How to Install
 
 ```sh
-$ deno install --allow-net --allow-env --name where-is-my-deno wimd.ts
+$ deno install --allow-net --allow-env --name where-is-my-deno mod.ts
 ```
 
 ## How to Use

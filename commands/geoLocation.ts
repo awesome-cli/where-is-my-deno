@@ -1,11 +1,11 @@
-import { blue, cyan, red, Kia } from "../deps.ts";
+import { blue, cyan, red, Kia } from '../deps.ts';
 
-import IpWhoIsResult from "../interfaces/IpWhoIsResult.ts";
+import { IpWhoIsResult } from '../types.d.ts';
 
-const API_ENDPOINT = "http://free.ipwhois.io/json/";
+const API_ENDPOINT = 'http://free.ipwhois.io/json/';
 
 const geoLocation = async () => {
-  const spinner = new Kia("Checking geolocation");
+  const spinner = new Kia('Checking geolocation');
 
   spinner.start();
 
@@ -17,16 +17,16 @@ const geoLocation = async () => {
     spinner.stop();
 
     console.log(
-      `${blue("Computer geolocation:")}\n` +
-        `${cyan("coordinates")}: ` +
+      `${blue('Computer geolocation:')}\n` +
+        `${cyan('coordinates')}: ` +
         `(${data.latitude}, ${data.longitude})\n` +
-        `${cyan("city")}: ${data.city}\n` +
-        `${cyan("region")}: ${data.region}\n` +
-        `${cyan("country")}: ${data.country}\n` +
-        `${cyan("continent")}: ${data.continent}`,
+        `${cyan('city')}: ${data.city}\n` +
+        `${cyan('region')}: ${data.region}\n` +
+        `${cyan('country')}: ${data.country}\n` +
+        `${cyan('continent')}: ${data.continent}`
     );
   } catch {
-    spinner.fail(red("Unable to get computer geolocation"));
+    spinner.fail(red('Unable to get computer geolocation'));
   }
 };
 
