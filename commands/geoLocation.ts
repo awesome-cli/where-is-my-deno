@@ -1,6 +1,6 @@
 import { blue, cyan, red, Kia } from "../deps.ts";
 
-import IpWhoIsResult from "../interfaces/IpWhoIsResult.ts";
+import { IpWhoIsResult } from "../types.d.ts";
 
 const API_ENDPOINT = "http://free.ipwhois.io/json/";
 
