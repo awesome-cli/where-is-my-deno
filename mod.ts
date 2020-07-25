@@ -1,5 +1,3 @@
-#!/usr/bin/env -S deno --allow-net --allow-env
-
 import { Denomander } from "./deps.ts";
 
 import geoLocation from "./commands/geoLocation.ts";
