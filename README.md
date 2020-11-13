@@ -4,6 +4,8 @@
 
 Get Deno location (geolocation and directory on your disk)
 
+**If you use Node.js, please check out [where-is-my-node](https://github.com/awesome-cli/where-is-my-node)**
+
 ## Prerequisites
 
 - Deno
