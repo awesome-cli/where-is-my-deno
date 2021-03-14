@@ -12,8 +12,8 @@ const program = new Denomander({
 program
   .command("where-is-my-deno", "Get Deno location")
   .alias("my-deno", "wimd")
-  .option("-g --geo", "Computer geolocation")
-  .option("-d --disk", "Directory on disk")
+  .option("-g, --geo", "output computer geolocation")
+  .option("-d, --disk", "output directory on disk")
   .action(async () => {
     const { geo, disk } = program;
 
