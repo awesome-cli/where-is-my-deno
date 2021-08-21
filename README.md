@@ -8,7 +8,7 @@ Get Deno location (geolocation and directory on your disk)
 
 ## Prerequisites
 
-- Deno
+- [Deno](https://deno.land/)
 
 ## How to Install
 
